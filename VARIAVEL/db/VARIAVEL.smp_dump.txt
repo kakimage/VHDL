@@ -1,0 +1,5 @@
+
+State Machine - |VARIAVEL|w_STATE
+Name w_STATE.st_ATUALIZA 
+w_STATE.st_IDLE 0 
+w_STATE.st_ATUALIZA 1 

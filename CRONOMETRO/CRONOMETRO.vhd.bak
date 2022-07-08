@@ -1,0 +1,86 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_SIGNED.ALL;
+
+
+
+entity CRONOMETRO is
+    Port ( i_CLK 			: in  STD_LOGIC;
+           i_RST 			: in  STD_LOGIC;
+			  i_START		: in  STD_LOGIC;
+			  i_STOP 		: in  STD_LOGIC;
+			  i_CLEAR   	: in  STD_LOGIC;
+			  o_CONTADOR	: out STD_LOGIC_VECTOR(16 downto 0);
+			  o_LED			: out STD_LOGIC
+	 );
+end CRONOMETRO;
+
+architecture Behavioral of CRONOMETRO is
+----------------------------------------------------------------------------------
+-- Internal signals.
+----------------------------------------------------------------------------------
+ type Estado is (st_IDLE, st_CONTAR, st_PARAR); 
+
+	attribute syn_encoding : string;
+	attribute syn_encoding of Estado : type is "safe";
+	
+   signal w_STATE 		: Estado;
+
+	
+	
+begin
+
+----------------------------------------------------------------------------------
+-- State machine.
+
+	process(i_RST, i_CLK)
+	begin
+		
+		if (i_RST = '1') then
+			o_CONTADOR <= (OTHERS => '0');
+			o_LED <= '0';
+			w_STATE <= st_IDLE;
+			
+		elsif rising_edge (i_CLK) then
+			case w_STATE is
+				when st_IDLE => 
+					if (i_START = '1') then
+						o_CONTADOR <= o_CONTADOR + 1;
+						w_STATE <= st_CONTAR;
+					else
+						w_STATE <= st_IDLE;
+					end if;
+					
+				when st_CONTAR =>
+					if (i_STOP = '1') then
+						w_STATE <= st_PARAR;
+					elsif (i_CLEAR = '1') then
+						o_CONTADOR <= (others => '0');
+						w_STATE <= st_IDLE;
+					else
+						o_CONTADOR <= o_CONTADOR + 1;
+						w_STATE <= st_CONTAR;
+					end if;
+				
+				when st_PARAR => 
+					if (i_START = '1') then
+						o_CONTADOR <= o_CONTADOR + 1;
+						W_STATE <= st_CONTAR;
+					elsif (i_CLEAR = '1') then
+						o_CONTADOR <= (others => '0');
+						w_STATE <= st_IDLE;
+					else
+						w_STATE <= st_PARAR;
+					end if;
+			
+				when others =>
+					w_STATE <= st_IDLE;
+					
+				end case;
+			end if;
+		end process;	
+			
+	
+end Behavioral;
+

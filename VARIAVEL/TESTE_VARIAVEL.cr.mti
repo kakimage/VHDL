@@ -1,0 +1,21 @@
+C:/Users/64017451934/Documents/DEC7555/2022B/VARIAVEL/VARIAVEL.vhd {1 {vcom -work work -2002 -explicit C:/Users/64017451934/Documents/DEC7555/2022B/VARIAVEL/VARIAVEL.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity VARIAVEL
+-- Compiling architecture Behavioral of VARIAVEL
+
+} {} {}} C:/Users/64017451934/Documents/DEC7555/2022B/VARIAVEL/TB_VARIAVEL.vhd {1 {vcom -work work -2002 -explicit C:/Users/64017451934/Documents/DEC7555/2022B/VARIAVEL/TB_VARIAVEL.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_SIGNED
+-- Compiling entity TB_VARIAVEL
+-- Compiling architecture Behavioral of TB_VARIAVEL
+
+} {} {}}

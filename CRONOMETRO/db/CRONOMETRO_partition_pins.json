@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_LED",
+					"strict" : false
+				},
+				{
+					"name" : "i_STOP",
+					"strict" : false
+				},
+				{
+					"name" : "i_CLEAR",
+					"strict" : false
+				},
+				{
+					"name" : "i_START",
+					"strict" : false
+				},
+				{
+					"name" : "i_RST",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
