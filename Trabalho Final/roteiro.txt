@@ -1,0 +1,7 @@
+diagrama de blocos
+
+
+implementar somador
+implementar mux
+implementar PC
+implementar ULA
