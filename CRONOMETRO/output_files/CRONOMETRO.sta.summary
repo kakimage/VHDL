@@ -2,48 +2,84 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'CONTADOR:U03|o_NUMERO[1]'
+Slack : -5.730
+TNS   : -34.379
+
 Type  : Slow 1200mV 85C Model Setup 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 8.025
+Slack : 6.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CONTADOR:U03|o_NUMERO[1]'
+Slack : 0.239
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'U02|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.433
 TNS   : 0.000
 
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CONTADOR:U03|o_NUMERO[1]'
+Slack : 0.433
+TNS   : 0.000
+
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.413
+Slack : 6.414
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_CLK'
 Slack : 9.895
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Setup 'CONTADOR:U03|o_NUMERO[1]'
+Slack : -5.567
+TNS   : -33.740
+
 Type  : Slow 1200mV 0C Model Setup 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 8.336
+Slack : 7.071
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.352
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CONTADOR:U03|o_NUMERO[1]'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CONTADOR:U03|o_NUMERO[1]'
+Slack : 0.425
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.385
+Slack : 6.384
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_CLK'
 Slack : 9.920
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Setup 'CONTADOR:U03|o_NUMERO[1]'
+Slack : -2.831
+TNS   : -17.333
+
 Type  : Fast 1200mV 0C Model Setup 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 11.079
+Slack : 10.431
 TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CONTADOR:U03|o_NUMERO[1]'
+Slack : -0.071
+TNS   : -0.122
 
 Type  : Fast 1200mV 0C Model Hold 'U02|altpll_component|auto_generated|pll1|clk[0]'
 Slack : 0.218
 TNS   : 0.000
 
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CONTADOR:U03|o_NUMERO[1]'
+Slack : 0.384
+TNS   : 0.000
+
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'U02|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 6.477
+Slack : 6.475
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLK'

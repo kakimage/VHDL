@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+entity CONTADOR is
+	 Port ( 
+				i_RST 			: in  STD_LOGIC;
+				i_CLK 			: in  STD_LOGIC;
+				i_CONTAGEM		: in  STD_LOGIC_VECTOR(27 DOWNTO 0);
+			   o_NUMERO  		: out STD_LOGIC_VECTOR(3 DOWNTO 0)
+	 );
+end CONTADOR;
+
+
+architecture Behavioral of CONTADOR is
+
+
+	
+begin
+
+
+	
+end Behavioral;

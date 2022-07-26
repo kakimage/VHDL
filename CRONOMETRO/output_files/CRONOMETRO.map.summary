@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Jun  9 18:40:35 2022
+Analysis & Synthesis Status : Successful - Tue Jun 14 20:09:19 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : CRONOMETRO
 Top-level Entity Name : TOP_CRONOMETRO
 Family : MAX 10
-Total logic elements : 52
-    Total combinational functions : 51
-    Dedicated logic registers : 33
-Total registers : 33
+Total logic elements : 78
+    Total combinational functions : 73
+    Dedicated logic registers : 41
+Total registers : 41
 Total pins : 48
 Total virtual pins : 0
 Total memory bits : 0

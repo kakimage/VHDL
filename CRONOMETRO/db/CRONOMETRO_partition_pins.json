@@ -4,6 +4,34 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "o_SEG_0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_SEG_0[6]",
+					"strict" : false
+				},
+				{
 					"name" : "o_LED",
 					"strict" : false
 				},
@@ -16,11 +44,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_START",
+					"name" : "i_RST",
 					"strict" : false
 				},
 				{
-					"name" : "i_RST",
+					"name" : "i_START",
 					"strict" : false
 				}
 			]

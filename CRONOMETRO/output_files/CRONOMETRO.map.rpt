@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CRONOMETRO
-Thu Jun  9 18:40:35 2022
+Tue Jun 14 20:09:19 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -16,15 +16,16 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
   8. Analysis & Synthesis IP Cores Summary
   9. State Machine - |TOP_CRONOMETRO|CRONOMETRO:U01|w_STATE
  10. Registers Protected by Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for CRONOMETRO:U01
- 14. Parameter Settings for User Entity Instance: PLL_INTEL:U02|altpll:altpll_component
- 15. altpll Parameter Settings by Entity Instance
- 16. Port Connectivity Checks: "CRONOMETRO:U01"
- 17. Post-Synthesis Netlist Statistics for Top Partition
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 11. User-Specified and Inferred Latches
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for CRONOMETRO:U01
+ 15. Parameter Settings for User Entity Instance: PLL_INTEL:U02|altpll:altpll_component
+ 16. Parameter Settings for User Entity Instance: CONTADOR:U03
+ 17. altpll Parameter Settings by Entity Instance
+ 18. Post-Synthesis Netlist Statistics for Top Partition
+ 19. Elapsed Time Per Partition
+ 20. Analysis & Synthesis Messages
 
 
 
@@ -51,15 +52,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun  9 18:40:35 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 14 20:09:19 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; CRONOMETRO                                  ;
 ; Top-level Entity Name              ; TOP_CRONOMETRO                              ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 52                                          ;
-;     Total combinational functions  ; 51                                          ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
+; Total logic elements               ; 78                                          ;
+;     Total combinational functions  ; 73                                          ;
+;     Dedicated logic registers      ; 41                                          ;
+; Total registers                    ; 41                                          ;
 ; Total pins                         ; 48                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -162,67 +163,70 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
+; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
+; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
-; CRONOMETRO.vhd                   ; yes             ; User VHDL File               ; D:/UFSC/2022.1/VHDL/CRONOMETRO/CRONOMETRO.vhd                            ;         ;
-; PLL_INTEL.v                      ; yes             ; User Wizard-Generated File   ; D:/UFSC/2022.1/VHDL/CRONOMETRO/PLL_INTEL.v                               ;         ;
-; TOP_CRONOMETRO.vhd               ; yes             ; User VHDL File               ; D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd                        ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altpll.tdf        ;         ;
-; aglobal211.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc    ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_pll.inc   ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratixii_pll.inc ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/cycloneii_pll.inc ;         ;
-; db/pll_intel_altpll.v            ; yes             ; Auto-Generated Megafunction  ; D:/UFSC/2022.1/VHDL/CRONOMETRO/db/pll_intel_altpll.v                     ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                      ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                  ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
+; CRONOMETRO.vhd                   ; yes             ; User VHDL File               ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CRONOMETRO.vhd        ;         ;
+; PLL_INTEL.v                      ; yes             ; User Wizard-Generated File   ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/PLL_INTEL.v           ;         ;
+; TOP_CRONOMETRO.vhd               ; yes             ; User VHDL File               ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd    ;         ;
+; SETE_SEGMENTOS.vhd               ; yes             ; User VHDL File               ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd    ;         ;
+; CONTADOR.vhd                     ; yes             ; User VHDL File               ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd          ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altpll.tdf             ;         ;
+; aglobal211.inc                   ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/aglobal211.inc         ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratix_pll.inc        ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/stratixii_pll.inc      ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/cycloneii_pll.inc      ;         ;
+; db/pll_intel_altpll.v            ; yes             ; Auto-Generated Megafunction  ; C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/db/pll_intel_altpll.v ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                                                                          ;
-+---------------------------------------------+----------------------------------------------------------------------------------------+
-; Resource                                    ; Usage                                                                                  ;
-+---------------------------------------------+----------------------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 52                                                                                     ;
-;                                             ;                                                                                        ;
-; Total combinational functions               ; 51                                                                                     ;
-; Logic element usage by number of LUT inputs ;                                                                                        ;
-;     -- 4 input functions                    ; 16                                                                                     ;
-;     -- 3 input functions                    ; 5                                                                                      ;
-;     -- <=2 input functions                  ; 30                                                                                     ;
-;                                             ;                                                                                        ;
-; Logic elements by mode                      ;                                                                                        ;
-;     -- normal mode                          ; 24                                                                                     ;
-;     -- arithmetic mode                      ; 27                                                                                     ;
-;                                             ;                                                                                        ;
-; Total registers                             ; 33                                                                                     ;
-;     -- Dedicated logic registers            ; 33                                                                                     ;
-;     -- I/O registers                        ; 0                                                                                      ;
-;                                             ;                                                                                        ;
-; I/O pins                                    ; 48                                                                                     ;
-;                                             ;                                                                                        ;
-; Embedded Multiplier 9-bit elements          ; 0                                                                                      ;
-;                                             ;                                                                                        ;
-; Total PLLs                                  ; 1                                                                                      ;
-;     -- PLLs                                 ; 1                                                                                      ;
-;                                             ;                                                                                        ;
-; Maximum fan-out node                        ; PLL_INTEL:U02|altpll:altpll_component|PLL_INTEL_altpll:auto_generated|wire_pll1_clk[0] ;
-; Maximum fan-out                             ; 35                                                                                     ;
-; Total fan-out                               ; 344                                                                                    ;
-; Average fan-out                             ; 1.90                                                                                   ;
-+---------------------------------------------+----------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                                                                ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Resource                                    ; Usage                                                                        ;
++---------------------------------------------+------------------------------------------------------------------------------+
+; Estimated Total logic elements              ; 78                                                                           ;
+;                                             ;                                                                              ;
+; Total combinational functions               ; 73                                                                           ;
+; Logic element usage by number of LUT inputs ;                                                                              ;
+;     -- 4 input functions                    ; 32                                                                           ;
+;     -- 3 input functions                    ; 8                                                                            ;
+;     -- <=2 input functions                  ; 33                                                                           ;
+;                                             ;                                                                              ;
+; Logic elements by mode                      ;                                                                              ;
+;     -- normal mode                          ; 46                                                                           ;
+;     -- arithmetic mode                      ; 27                                                                           ;
+;                                             ;                                                                              ;
+; Total registers                             ; 41                                                                           ;
+;     -- Dedicated logic registers            ; 41                                                                           ;
+;     -- I/O registers                        ; 0                                                                            ;
+;                                             ;                                                                              ;
+; I/O pins                                    ; 48                                                                           ;
+;                                             ;                                                                              ;
+; Embedded Multiplier 9-bit elements          ; 0                                                                            ;
+;                                             ;                                                                              ;
+; Total PLLs                                  ; 1                                                                            ;
+;     -- PLLs                                 ; 1                                                                            ;
+;                                             ;                                                                              ;
+; Maximum fan-out node                        ; PLL_INTEL:U02|altpll:altpll_component|PLL_INTEL_altpll:auto_generated|locked ;
+; Maximum fan-out                             ; 47                                                                           ;
+; Total fan-out                               ; 454                                                                          ;
+; Average fan-out                             ; 2.15                                                                         ;
++---------------------------------------------+------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -230,11 +234,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                   ; Entity Name      ; Library Name ;
 +--------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------+------------------+--------------+
-; |TOP_CRONOMETRO                            ; 51 (0)              ; 33 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |TOP_CRONOMETRO                                                                       ; TOP_CRONOMETRO   ; work         ;
+; |TOP_CRONOMETRO                            ; 73 (0)              ; 41 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 48   ; 0            ; 0          ; |TOP_CRONOMETRO                                                                       ; TOP_CRONOMETRO   ; work         ;
+;    |CONTADOR:U03|                          ; 7 (7)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|CONTADOR:U03                                                          ; CONTADOR         ; work         ;
 ;    |CRONOMETRO:U01|                        ; 50 (50)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|CRONOMETRO:U01                                                        ; CRONOMETRO       ; work         ;
 ;    |PLL_INTEL:U02|                         ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|PLL_INTEL:U02                                                         ; PLL_INTEL        ; work         ;
 ;       |altpll:altpll_component|            ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|PLL_INTEL:U02|altpll:altpll_component                                 ; altpll           ; work         ;
 ;          |PLL_INTEL_altpll:auto_generated| ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|PLL_INTEL:U02|altpll:altpll_component|PLL_INTEL_altpll:auto_generated ; PLL_INTEL_altpll ; work         ;
+;    |SETE_SEGMENTOS:U04|                    ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |TOP_CRONOMETRO|SETE_SEGMENTOS:U04                                                    ; SETE_SEGMENTOS   ; work         ;
 +--------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------+------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -272,28 +278,45 @@ Encoding Type: Safe One-Hot
 +------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                   ;
++----------------------------------------------------+-------------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal     ; Free of Timing Hazards ;
++----------------------------------------------------+-------------------------+------------------------+
+; SETE_SEGMENTOS:U04|o_DISPLAY[0]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[1]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[2]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[3]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[4]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[5]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; SETE_SEGMENTOS:U04|o_DISPLAY[6]                    ; SETE_SEGMENTOS:U04|Mux7 ; yes                    ;
+; Number of user-specified and inferred latches = 7  ;                         ;                        ;
++----------------------------------------------------+-------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 28    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Asynchronous Clear ; 37    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 28    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
-; 9:1                ; 28 bits   ; 168 LEs       ; 28 LEs               ; 140 LEs                ; Yes        ; |TOP_CRONOMETRO|CRONOMETRO:U01|w_CONTADOR[27] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
+; 9:1                ; 28 bits   ; 168 LEs       ; 28 LEs               ; 140 LEs                ; Yes        ; |TOP_CRONOMETRO|CRONOMETRO:U01|w_CONTADOR[5] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
 
 +---------------------------------------------+
@@ -679,6 +702,18 @@ Encoding Type: Safe One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: CONTADOR:U03 ;
++----------------+----------+-------------------------------+
+; Parameter Name ; Value    ; Type                          ;
++----------------+----------+-------------------------------+
+; p_data         ; 28       ; Signed Integer                ;
+; p_contagem     ; 50000000 ; Signed Integer                ;
+; p_digitos      ; 9        ; Signed Integer                ;
++----------------+----------+-------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-----------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                          ;
 +-------------------------------+---------------------------------------+
@@ -696,37 +731,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+---------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "CRONOMETRO:U01"                                                                           ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port       ; Type   ; Severity ; Details                                                                             ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-; o_contador ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 48                          ;
-; cycloneiii_ff         ; 33                          ;
-;     CLR               ; 5                           ;
+; cycloneiii_ff         ; 41                          ;
+;     CLR               ; 9                           ;
+;     ENA               ; 4                           ;
 ;     ENA CLR SCLR      ; 28                          ;
-; cycloneiii_lcell_comb ; 52                          ;
+; cycloneiii_lcell_comb ; 74                          ;
 ;     arith             ; 27                          ;
 ;         2 data inputs ; 27                          ;
-;     normal            ; 25                          ;
+;     normal            ; 47                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 16                          ;
+;         2 data inputs ; 5                           ;
+;         3 data inputs ; 8                           ;
+;         4 data inputs ; 32                          ;
 ; cycloneiii_pll        ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.00                        ;
-; Average LUT depth     ; 2.87                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 3.00                        ;
 +-----------------------+-----------------------------+
 
 
@@ -735,7 +762,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -745,37 +772,38 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Jun  9 18:40:09 2022
+    Info: Processing started: Tue Jun 14 20:09:01 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CRONOMETRO -c CRONOMETRO
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file cronometro.vhd
-    Info (12022): Found design unit 1: CRONOMETRO-Behavioral File: D:/UFSC/2022.1/VHDL/CRONOMETRO/CRONOMETRO.vhd Line: 19
-    Info (12023): Found entity 1: CRONOMETRO File: D:/UFSC/2022.1/VHDL/CRONOMETRO/CRONOMETRO.vhd Line: 8
+    Info (12022): Found design unit 1: CRONOMETRO-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CRONOMETRO.vhd Line: 19
+    Info (12023): Found entity 1: CRONOMETRO File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CRONOMETRO.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_cronometro.vhd
-    Info (12022): Found design unit 1: TB_CRONOMETRO-Behavioral File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TB_CRONOMETRO.vhd Line: 12
-    Info (12023): Found entity 1: TB_CRONOMETRO File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TB_CRONOMETRO.vhd Line: 8
+    Info (12022): Found design unit 1: TB_CRONOMETRO-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TB_CRONOMETRO.vhd Line: 12
+    Info (12023): Found entity 1: TB_CRONOMETRO File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TB_CRONOMETRO.vhd Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll_intel.v
-    Info (12023): Found entity 1: PLL_INTEL File: D:/UFSC/2022.1/VHDL/CRONOMETRO/PLL_INTEL.v Line: 40
+    Info (12023): Found entity 1: PLL_INTEL File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/PLL_INTEL.v Line: 40
 Info (12021): Found 2 design units, including 1 entities, in source file top_cronometro.vhd
-    Info (12022): Found design unit 1: TOP_CRONOMETRO-Behavioral File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 24
-    Info (12023): Found entity 1: TOP_CRONOMETRO File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 8
+    Info (12022): Found design unit 1: TOP_CRONOMETRO-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 24
+    Info (12023): Found entity 1: TOP_CRONOMETRO File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file sete_segmentos.vhd
-    Info (12022): Found design unit 1: SETE_SEGMENTOS-Behavioral File: D:/UFSC/2022.1/VHDL/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 16
-    Info (12023): Found entity 1: SETE_SEGMENTOS File: D:/UFSC/2022.1/VHDL/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 7
+    Info (12022): Found design unit 1: SETE_SEGMENTOS-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 16
+    Info (12023): Found entity 1: SETE_SEGMENTOS File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
+    Info (12022): Found design unit 1: CONTADOR-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 23
+    Info (12023): Found entity 1: CONTADOR File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 8
 Info (12127): Elaborating entity "TOP_CRONOMETRO" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(14): used implicit default value for signal "o_SEG_0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(15): used implicit default value for signal "o_SEG_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(16): used implicit default value for signal "o_SEG_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(17): used implicit default value for signal "o_SEG_3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(18): used implicit default value for signal "o_SEG_4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(19): used implicit default value for signal "o_SEG_5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-Warning (10036): Verilog HDL or VHDL warning at TOP_CRONOMETRO.vhd(54): object "w_CONTADOR" assigned a value but never read File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 54
-Info (12128): Elaborating entity "CRONOMETRO" for hierarchy "CRONOMETRO:U01" File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 63
-Info (12128): Elaborating entity "PLL_INTEL" for hierarchy "PLL_INTEL:U02" File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 79
-Info (12128): Elaborating entity "altpll" for hierarchy "PLL_INTEL:U02|altpll:altpll_component" File: D:/UFSC/2022.1/VHDL/CRONOMETRO/PLL_INTEL.v Line: 104
-Info (12130): Elaborated megafunction instantiation "PLL_INTEL:U02|altpll:altpll_component" File: D:/UFSC/2022.1/VHDL/CRONOMETRO/PLL_INTEL.v Line: 104
-Info (12133): Instantiated megafunction "PLL_INTEL:U02|altpll:altpll_component" with the following parameter: File: D:/UFSC/2022.1/VHDL/CRONOMETRO/PLL_INTEL.v Line: 104
+Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(15): used implicit default value for signal "o_SEG_1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(16): used implicit default value for signal "o_SEG_2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(17): used implicit default value for signal "o_SEG_3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(18): used implicit default value for signal "o_SEG_4" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+Warning (10541): VHDL Signal Declaration warning at TOP_CRONOMETRO.vhd(19): used implicit default value for signal "o_SEG_5" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+Info (12128): Elaborating entity "CRONOMETRO" for hierarchy "CRONOMETRO:U01" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 87
+Info (12128): Elaborating entity "PLL_INTEL" for hierarchy "PLL_INTEL:U02" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 103
+Info (12128): Elaborating entity "altpll" for hierarchy "PLL_INTEL:U02|altpll:altpll_component" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/PLL_INTEL.v Line: 104
+Info (12130): Elaborated megafunction instantiation "PLL_INTEL:U02|altpll:altpll_component" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/PLL_INTEL.v Line: 104
+Info (12133): Instantiated megafunction "PLL_INTEL:U02|altpll:altpll_component" with the following parameter: File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/PLL_INTEL.v Line: 104
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "2"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -832,64 +860,84 @@ Info (12133): Instantiated megafunction "PLL_INTEL:U02|altpll:altpll_component" 
     Info (12134): Parameter "self_reset_on_loss_lock" = "OFF"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_intel_altpll.v
-    Info (12023): Found entity 1: PLL_INTEL_altpll File: D:/UFSC/2022.1/VHDL/CRONOMETRO/db/pll_intel_altpll.v Line: 31
+    Info (12023): Found entity 1: PLL_INTEL_altpll File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/db/pll_intel_altpll.v Line: 31
 Info (12128): Elaborating entity "PLL_INTEL_altpll" for hierarchy "PLL_INTEL:U02|altpll:altpll_component|PLL_INTEL_altpll:auto_generated" File: c:/intelfpga_lite/21.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (284007): State machine "|TOP_CRONOMETRO|CRONOMETRO:U01|w_STATE" will be implemented as a safe state machine. File: D:/UFSC/2022.1/VHDL/CRONOMETRO/CRONOMETRO.vhd Line: 28
+Info (12128): Elaborating entity "CONTADOR" for hierarchy "CONTADOR:U03" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 118
+Info (12128): Elaborating entity "SETE_SEGMENTOS" for hierarchy "SETE_SEGMENTOS:U04" File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 134
+Warning (10540): VHDL Signal Declaration warning at SETE_SEGMENTOS.vhd(20): used explicit default value for signal "w_ON" because signal was never assigned a value File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 20
+Warning (10540): VHDL Signal Declaration warning at SETE_SEGMENTOS.vhd(21): used explicit default value for signal "w_OFF" because signal was never assigned a value File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 21
+Warning (10492): VHDL Process Statement warning at SETE_SEGMENTOS.vhd(31): signal "i_NUMERO" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at SETE_SEGMENTOS.vhd(25): inferring latch(es) for signal or variable "o_DISPLAY", which holds its previous value in one or more paths through the process File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[0]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[1]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[2]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[3]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[4]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[5]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (10041): Inferred latch for "o_DISPLAY[6]" at SETE_SEGMENTOS.vhd(25) File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+Info (284007): State machine "|TOP_CRONOMETRO|CRONOMETRO:U01|w_STATE" will be implemented as a safe state machine. File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CRONOMETRO.vhd Line: 28
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[0] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[1] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[1] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[2] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[2] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[2] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[3] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[2] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[4] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[2] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[5] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[1] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
+Warning (13012): Latch SETE_SEGMENTOS:U04|o_DISPLAY[6] has unsafe behavior File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/SETE_SEGMENTOS.vhd Line: 25
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTADOR:U03|o_NUMERO[1] File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/CONTADOR.vhd Line: 34
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_SEG_0[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_0[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 14
-    Warning (13410): Pin "o_SEG_1[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_1[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
-    Warning (13410): Pin "o_SEG_2[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_2[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
-    Warning (13410): Pin "o_SEG_3[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_3[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
-    Warning (13410): Pin "o_SEG_4[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_4[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
-    Warning (13410): Pin "o_SEG_5[0]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[1]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[2]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[3]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[4]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[5]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
-    Warning (13410): Pin "o_SEG_5[6]" is stuck at GND File: D:/UFSC/2022.1/VHDL/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_1[0]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[1]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[2]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[3]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[4]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[5]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_1[6]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 15
+    Warning (13410): Pin "o_SEG_2[0]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[1]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[2]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[3]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[4]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[5]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_2[6]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 16
+    Warning (13410): Pin "o_SEG_3[0]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[1]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[2]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[3]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[4]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[5]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_3[6]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 17
+    Warning (13410): Pin "o_SEG_4[0]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[1]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[2]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[3]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[4]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[5]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_4[6]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 18
+    Warning (13410): Pin "o_SEG_5[0]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[1]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[2]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[3]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[4]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[5]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
+    Warning (13410): Pin "o_SEG_5[6]" is stuck at GND File: C:/Users/64017451934/Documents/DEC7555/2022B/CRONOMETRO/TOP_CRONOMETRO.vhd Line: 19
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 131 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 43 output pins
-    Info (21061): Implemented 52 logic cells
+    Info (21061): Implemented 82 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Thu Jun  9 18:40:35 2022
-    Info: Elapsed time: 00:00:26
-    Info: Total CPU time (on all processors): 00:00:44
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 60 warnings
+    Info: Peak virtual memory: 4823 megabytes
+    Info: Processing ended: Tue Jun 14 20:09:19 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:39
 
 
