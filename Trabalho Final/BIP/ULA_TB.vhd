@@ -1,56 +1,56 @@
--- fpga4student.com: FPGA projects, Verilog projects, VHDL projects
--- VHDL project: VHDL code for 16-bit ALU 
--- Testbench VHDL code for 16-bit ALU 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use IEEE.std_logic_unsigned.all;
--- Testbench 
-ENTITY tb_ALU IS
-END tb_ALU;
+USE ieee.numeric_std.ALL;
+  
+ENTITY TB_ULA IS
+END TB_ULA;
+  
+ARCHITECTURE behavior OF TB_ULA IS
+  
+	COMPONENT ULA is
+	PORT(
+		i_INPUT_A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		i_INPUT_B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		i_INPUT_IR: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+		i_SEL : IN STD_LOGIC_VECTOR(2 DOWNTO 0);
+		o_OUTPUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
+	);
+	END COMPONENT;
+  
  
-ARCHITECTURE behavior OF tb_ALU IS 
+ signal i_INPUT_A : STD_LOGIC_VECTOR(15 DOWNTO 0) := (others => '0');
+ signal i_INPUT_B : STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '0');
+ signal i_INPUT_IR : STD_LOGIC_VECTOR(3 DOWNTO 0) := (others => '0');
+ signal i_SEL : STD_LOGIC_VECTOR(2 DOWNTO 0) := (others => '0');
  
-    -- Component Declaration for the 16-bit ALU
- 
-    COMPONENT ALU
-    PORT(
-         ABUS : IN  std_logic_vector(15 downto 0);
-         BBUS : IN  std_logic_vector(15 downto 0);
-         ALUctrl : IN  std_logic_vector(3 downto 0);
-         ALUOUT : OUT  std_logic_vector(15 downto 0)
-        );
-    END COMPONENT;
-   
-   --Inputs
-   signal ABUS : std_logic_vector(15 downto 0) := (others => '0');
-   signal BBUS : std_logic_vector(15 downto 0) := (others => '0');
-   signal ALUctrl : std_logic_vector(3 downto 0) := (others => '0');
-
-  --Outputs
-   signal ALUOUT : std_logic_vector(15 downto 0);
- 
+ signal o_OUTPUT : STD_LOGIC_VECTOR(15 DOWNTO 0);
+  
 BEGIN
- 
- -- Instantiate the 16-bit ALU 
-   uut: ALU PORT MAP (
-          ABUS => ABUS,
-          BBUS => BBUS,
-          ALUctrl => ALUctrl,
-          ALUOUT => ALUOUT
-        );
-   stim_proc: process
-   begin  
-      ABUS <= x"000A";
-  BBUS <= x"0002";
-  ALUctrl <= x"0";
-  -- change ALU Control input
-   for i in 0 to 15 loop 
-  ALUctrl <= ALUctrl + x"1";
-  wait for 100 ns;
-   end loop;
-      ABUS <= x"00F6";
-  BBUS <= x"000A";
-      wait;
-   end process;
+  
+	UUT: ULA PORT MAP (
+		i_INPUT_A => i_INPUT_A,
+		i_INPUT_B => i_INPUT_B,
+		i_INPUT_IR => i_INPUT_IR,
+		o_OUTPUT => o_OUTPUT
+	);
 
+	PROCESS
+	BEGIN
+	
+	WAIT FOR 100 ns;
+
+	i_INPUT_A <= "0000111100001001";
+	i_INPUT_B <= "0000111100001111";
+	i_INPUT_IR <= "0000111100001100";
+
+	i_SEL <= "100";
+	WAIT FOR 100 ns;
+	i_SEL <= "101";
+	WAIT FOR 100 ns;
+	i_SEL <= "110";
+	WAIT FOR 100 ns;
+	i_SEL <= "111";
+
+	end process;
+ 
 END;

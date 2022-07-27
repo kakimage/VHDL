@@ -1,0 +1,29 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+
+entity FUNCAO_LOGICA is
+    Port ( 
+				i_A		: in  STD_LOGIC;
+				i_B 		: in  STD_LOGIC;
+				i_C 		: in  STD_LOGIC;
+				i_D 		: in  STD_LOGIC;
+				i_E 		: in  STD_LOGIC;
+				o_F   	: out STD_LOGIC;
+			   o_G   	: out STD_LOGIC
+	 );
+end FUNCAO_LOGICA;
+
+
+
+architecture Behavioral of FUNCAO_LOGICA is
+
+
+
+begin
+
+	
+	
+end Behavioral;

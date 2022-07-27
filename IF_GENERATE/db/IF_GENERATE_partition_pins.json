@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_C[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_C[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_B[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

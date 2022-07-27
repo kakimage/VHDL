@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/HALF_ADDER.VHD
+source_file = 1, D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/FULL_ADDER.vhd
+source_file = 1, D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/TB_FULL_ADDER.vhd
+source_file = 1, D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/db/FULL_ADDER.cbx.xml
+source_file = 1, d:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, d:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, d:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, d:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = FULL_ADDER
+instance = comp, \O_C~output\, O_C~output, FULL_ADDER, 1
+instance = comp, \O_S~output\, O_S~output, FULL_ADDER, 1
+instance = comp, \I_A~input\, I_A~input, FULL_ADDER, 1
+instance = comp, \I_B~input\, I_B~input, FULL_ADDER, 1
+instance = comp, \I_C~input\, I_C~input, FULL_ADDER, 1
+instance = comp, \O_C~0\, O_C~0, FULL_ADDER, 1
+instance = comp, \HALF2|O_S~0\, HALF2|O_S~0, FULL_ADDER, 1

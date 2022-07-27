@@ -1,0 +1,128 @@
+m255
+K3
+13
+cModel Technology
+dD:\Users\nicol\Desktop\Prova monitoria VHDL\registrador_32bits_assincrono
+Efull_adder
+Z0 w1552603283
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dD:\Users\nicol\Desktop\Prova monitoria VHDL\full_adder
+Z7 8D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/FULL_ADDER.vhd
+Z8 FD:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/FULL_ADDER.vhd
+l0
+L7
+VdKUzgm4cazAac2XFjiO_D2
+Z9 OV;C;10.1d;51
+32
+Z10 !s108 1552605281.266000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/FULL_ADDER.vhd|
+Z12 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/FULL_ADDER.vhd|
+Z13 o-work work -2002 -explicit -O0
+Z14 tExplicit 1
+!s100 >FoGGIGKL9I4Un2oNJ[^`2
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+DEx4 work 10 full_adder 0 22 dKUzgm4cazAac2XFjiO_D2
+l30
+L17
+VcREdzI?g5aiUo7gW]6eZQ0
+R9
+32
+R10
+R11
+R12
+R13
+R14
+!s100 1d5zo_SOD[RkeLUOel@702
+!i10b 1
+Ehalf_adder
+Z15 w1552600958
+R1
+R2
+R3
+R4
+R5
+R6
+Z16 8D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/HALF_ADDER.VHD
+Z17 FD:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/HALF_ADDER.VHD
+l0
+L7
+Vg=lfcik?^6lPHC=A>miQ_2
+R9
+32
+Z18 !s108 1552605281.449000
+Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/HALF_ADDER.VHD|
+Z20 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/HALF_ADDER.VHD|
+R13
+R14
+!s100 6Eh5Jc2^CDaZo4_@cmI_Y3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+DEx4 work 10 half_adder 0 22 g=lfcik?^6lPHC=A>miQ_2
+l18
+L16
+VIO>35QHl[ABOLEfYo5MdC0
+!s100 B0G_D[[=_1?K8Hf^l`30A1
+R9
+32
+R18
+R19
+R20
+R13
+R14
+!i10b 1
+Etb_full_adder
+Z21 w1552603542
+R1
+R2
+R3
+R4
+R5
+R6
+Z22 8D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/TB_FULL_ADDER.vhd
+Z23 FD:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/TB_FULL_ADDER.vhd
+l0
+L7
+VO=1a9B]3z1<_L>BJQM:Vl0
+!s100 lT:j^D8dV?eJaTYW;`NW81
+R9
+32
+!i10b 1
+Z24 !s108 1552605281.641000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/TB_FULL_ADDER.vhd|
+Z26 !s107 D:/Users/nicol/Desktop/Prova monitoria VHDL/full_adder/TB_FULL_ADDER.vhd|
+R13
+R14
+Abehavioral
+R1
+R2
+R3
+R4
+R5
+Z27 DEx4 work 13 tb_full_adder 0 22 O=1a9B]3z1<_L>BJQM:Vl0
+l27
+L11
+Z28 VU6P;M6dCl@^2E2mdi9ZO`1
+Z29 !s100 RA8IR?8hd^^RYKiRjIS_T2
+R9
+32
+!i10b 1
+R24
+R25
+R26
+R13
+R14

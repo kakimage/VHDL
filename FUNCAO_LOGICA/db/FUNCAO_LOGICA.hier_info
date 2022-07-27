@@ -1,0 +1,34 @@
+|FUNCAO_LOGICA
+i_A => LOGICA_AND:U01.i_A
+i_B => LOGICA_AND:U01.i_B
+i_B => LOGICA_AND:U02.i_A
+i_C => LOGICA_AND:U01.i_C
+i_C => LOGICA_AND:U02.i_B
+i_D => LOGICA_AND:U01.i_D
+i_D => LOGICA_AND:U02.i_C
+i_E => LOGICA_AND:U01.i_E
+i_E => LOGICA_AND:U02.i_D
+o_F <= LOGICA_AND:U01.o_C
+o_G <= LOGICA_AND:U02.o_C
+
+
+|FUNCAO_LOGICA|LOGICA_AND:U01
+i_A => w_F.IN0
+i_B => w_F.IN1
+i_C => w_F.IN1
+i_C => w_G.IN0
+i_D => w_G.IN1
+i_E => w_G.IN1
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FUNCAO_LOGICA|LOGICA_AND:U02
+i_A => w_F.IN0
+i_B => w_F.IN1
+i_C => w_F.IN1
+i_C => w_G.IN0
+i_D => w_G.IN1
+i_E => w_G.IN1
+o_C <= o_C.DB_MAX_OUTPUT_PORT_TYPE
+
+

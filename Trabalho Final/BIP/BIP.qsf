@@ -50,12 +50,13 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
 set_global_assignment -name VHDL_FILE BIP.vhd
 set_global_assignment -name QIP_FILE RAM.qip
 set_global_assignment -name QIP_FILE ROM.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE MUX2X1.vhd
 set_global_assignment -name VHDL_FILE MUX3X1.vhd
 set_global_assignment -name VHDL_FILE ULA.vhd
-set_global_assignment -name VHDL_FILE ULA_TB.vhd
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name VHDL_FILE SETE_SEGMENTOS.vhd
+set_global_assignment -name VHDL_FILE ULA_TB.vhd
+set_global_assignment -name VHDL_FILE CONTROL.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
