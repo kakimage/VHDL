@@ -1,1 +1,13 @@
-entity is
+LIBRARY ieee ;
+USE ieee.std_logic_1164.all ;
+USE ieee.std_logic_unsigned.all ;
+ENTITY BIP IS
+	PORT
+	(
+	  i_INPUT_A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+	  i_INPUT_B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+	  i_INPUT_IR: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+	  o_OUTPUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
+	  i_SEL : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
+	);
+END BIP;

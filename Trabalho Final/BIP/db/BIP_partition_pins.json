@@ -1,0 +1,277 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_OUTPUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[10]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[11]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[12]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[13]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[14]",
+					"strict" : false
+				},
+				{
+					"name" : "o_OUTPUT[15]",
+					"strict" : false
+				},
+				{
+					"name" : "i_SEL[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_SEL[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_SEL[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[4]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[5]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[6]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[7]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[8]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[9]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[10]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[10]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[10]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[11]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[11]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[11]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[12]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[12]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[12]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[13]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[13]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[13]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[14]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[14]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[14]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_B[15]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_IR[15]",
+					"strict" : false
+				},
+				{
+					"name" : "i_INPUT_A[15]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

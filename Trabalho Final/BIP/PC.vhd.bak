@@ -1,0 +1,22 @@
+entity PC is
+Port ( PC_IN     : in STD_LOGIC_VECTOR (9 downto 0); --New PC in value (PC+1 or jump)
+       PC_OUT    : out STD_LOGIC_VECTOR (9 downto 0); --PC out to instruction memory
+       Jump_Inst : in STD_LOGIC_VECTOR(9 downto 0); --Jump address
+       Jump      : in STD_LOGIC; --Jump MUX
+       clk       : in STD_LOGIC);
+end PC;
+
+architecture Behavioral of PC is
+begin
+
+PC_IN <= (PC_IN + "0000000001") when (Jump = '0')
+else Jump_Inst;     
+
+process(clk)
+begin
+   if rising_edge(clk) then --If it is the next clock cycle (i.e time for the next instruction)
+   PC_OUT <= PC_IN;
+
+end if;
+end process;     
+end Behavioral;

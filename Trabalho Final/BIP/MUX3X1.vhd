@@ -19,7 +19,7 @@ BEGIN
 		 	case S is
 				when "00" => Q <= A;
 				when "01" => Q <= B;
-				when "10" => C <= C;
+				when "10" => Q <= C;
 				when others => report "unreachable" severity failure;
 	end case;
 	END PROCESS;

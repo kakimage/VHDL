@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Tue Jul 26 18:39:28 2022
+Analysis & Elaboration Status : Successful - Thu Jul 28 13:25:08 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : BIP
-Top-level Entity Name : BIP
+Top-level Entity Name : MUX2X1
 Family : MAX 10
 Total logic elements : N/A until Partition Merge
     Total combinational functions : N/A until Partition Merge

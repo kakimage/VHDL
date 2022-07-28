@@ -3,10 +3,11 @@ USE ieee.std_logic_1164.all;
 use ieee.std_logic_unsigned.all;
 
 entity MUX2X1 is 
-port (A: in std_logic_vector(15 downto 0);
-		B: in std_logic_vector(15 downto 0);
+port (
+		A: in std_logic_vector(15 DOWNTO 0);
+		B: in std_logic_vector(15 DOWNTO 0);
 		S: in std_logic;
-		Q: out std_logic_vector(15 downto 0)
+		Q: out std_logic_vector(15 DOWNTO 0)
 
 );
 end MUX2X1;

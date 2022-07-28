@@ -31,6 +31,7 @@ BEGIN
 		i_INPUT_A => i_INPUT_A,
 		i_INPUT_B => i_INPUT_B,
 		i_INPUT_IR => i_INPUT_IR,
+		i_SEL => i_SEL,
 		o_OUTPUT => o_OUTPUT
 	);
 
