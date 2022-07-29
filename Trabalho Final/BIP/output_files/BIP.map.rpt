@@ -1,5 +1,5 @@
-Analysis & Elaboration report for BIP
-Thu Jul 28 13:25:08 2022
+Analysis & Synthesis report for BIP
+Thu Jul 28 19:17:46 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -7,10 +7,16 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -35,50 +41,34 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Thu Jul 28 13:25:08 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jul 28 19:17:46 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; BIP                                         ;
-; Top-level Entity Name              ; MUX2X1                                      ;
+; Top-level Entity Name              ; BIP                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 2                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; 10M50DAF484C7G     ;                    ;
-; Top-level entity name                                            ; MUX2X1             ; BIP                ;
+; Top-level entity name                                            ; BIP                ; BIP                ;
 ; Family name                                                      ; MAX 10             ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -158,64 +148,174 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+; BIP.vhd                          ; yes             ; User VHDL File  ; C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/BIP.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 2     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; i_CLK ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 2     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |BIP                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 2    ; 0            ; 0          ; |BIP                ; BIP         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 2                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Thu Jul 28 13:24:54 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BIP -c BIP --analysis_and_elaboration
+    Info: Processing started: Thu Jul 28 19:17:28 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BIP -c BIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file bip.vhd
-    Info (12023): Found entity 1: BIP File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file bip.vhd
+    Info (12022): Found design unit 1: BIP-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/BIP.vhd Line: 13
+    Info (12023): Found entity 1: BIP File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/BIP.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
-    Info (12022): Found design unit 1: ram-SYN File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd Line: 55
-    Info (12023): Found entity 1: RAM File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd Line: 43
+    Info (12022): Found design unit 1: ram-SYN File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/RAM.vhd Line: 55
+    Info (12023): Found entity 1: RAM File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/RAM.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file rom.vhd
-    Info (12022): Found design unit 1: rom-SYN File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd Line: 53
-    Info (12023): Found entity 1: ROM File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd Line: 43
+    Info (12022): Found design unit 1: rom-SYN File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ROM.vhd Line: 53
+    Info (12023): Found entity 1: ROM File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ROM.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file mux2x1.vhd
-    Info (12022): Found design unit 1: MUX2X1-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 15
-    Info (12023): Found entity 1: MUX2X1 File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 5
+    Info (12022): Found design unit 1: MUX2X1-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 15
+    Info (12023): Found entity 1: MUX2X1 File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux3x1.vhd
-    Info (12022): Found design unit 1: MUX3X1-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd Line: 15
-    Info (12023): Found entity 1: MUX3X1 File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd Line: 5
+    Info (12022): Found design unit 1: MUX3X1-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/MUX3X1.vhd Line: 16
+    Info (12023): Found entity 1: MUX3X1 File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/MUX3X1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
-    Info (12022): Found design unit 1: ula-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd Line: 15
-    Info (12023): Found entity 1: ula File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd Line: 4
+    Info (12022): Found design unit 1: ula-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ULA.vhd Line: 15
+    Info (12023): Found entity 1: ula File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sete_segmentos.vhd
-    Info (12022): Found design unit 1: SETE_SEGMENTOS-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd Line: 16
-    Info (12023): Found entity 1: SETE_SEGMENTOS File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd Line: 7
+    Info (12022): Found design unit 1: SETE_SEGMENTOS-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd Line: 16
+    Info (12023): Found entity 1: SETE_SEGMENTOS File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file ula_tb.vhd
-    Info (12022): Found design unit 1: TB_ULA-behavior File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 8
-    Info (12023): Found entity 1: TB_ULA File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 5
+    Info (12022): Found design unit 1: TB_ULA-behavior File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 8
+    Info (12023): Found entity 1: TB_ULA File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
-    Info (12022): Found design unit 1: CONTROL-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 21
-    Info (12023): Found entity 1: CONTROL File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 7
+    Info (12022): Found design unit 1: CONTROL-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 22
+    Info (12023): Found entity 1: CONTROL File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pc.vhd
-    Info (12022): Found design unit 1: PC-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd Line: 18
-    Info (12023): Found entity 1: PC File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd Line: 8
+    Info (12022): Found design unit 1: PC-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/PC.vhd Line: 18
+    Info (12023): Found entity 1: PC File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/PC.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file ir.vhd
-    Info (12022): Found design unit 1: IR-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd Line: 16
-    Info (12023): Found entity 1: IR File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd Line: 6
+    Info (12022): Found design unit 1: IR-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/IR.vhd Line: 16
+    Info (12023): Found entity 1: IR File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/IR.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file acc.vhd
-    Info (12022): Found design unit 1: ACC-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd Line: 17
-    Info (12023): Found entity 1: ACC File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd Line: 6
+    Info (12022): Found design unit 1: ACC-Behavioral File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ACC.vhd Line: 17
+    Info (12023): Found entity 1: ACC File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ACC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file acc_tb.vhd
-    Info (12022): Found design unit 1: tb_accumulator-behavior File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 10
-    Info (12023): Found entity 1: tb_accumulator File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 7
+    Info (12022): Found design unit 1: tb_accumulator-behavior File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 10
+    Info (12023): Found entity 1: tb_accumulator File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
-    Info (12022): Found design unit 1: pll-SYN File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd Line: 54
-    Info (12023): Found entity 1: PLL File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd Line: 43
-Info (12127): Elaborating entity "MUX2X1" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at MUX2X1.vhd(20): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 20
-Warning (10492): VHDL Process Statement warning at MUX2X1.vhd(22): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd Line: 22
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4788 megabytes
-    Info: Processing ended: Thu Jul 28 13:25:08 2022
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:33
+    Info (12022): Found design unit 1: pll-SYN File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/PLL.vhd Line: 54
+    Info (12023): Found entity 1: PLL File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/PLL.vhd Line: 43
+Info (12127): Elaborating entity "BIP" for the top level hierarchy
+Warning (12158): Entity "BIP" contains only dangling pins
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "i_CLK" File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/BIP.vhd Line: 7
+    Warning (15610): No output dependent on input pin "i_RST" File: C:/Users/leandro.kakimoto/Desktop/VHDL/Trabalho Final/BIP/BIP.vhd Line: 8
+Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 2 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4777 megabytes
+    Info: Processing ended: Thu Jul 28 19:17:46 2022
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:23
 
 

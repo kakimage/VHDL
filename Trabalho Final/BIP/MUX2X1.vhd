@@ -4,22 +4,22 @@ use ieee.std_logic_unsigned.all;
 
 entity MUX2X1 is 
 port (
-		A: in std_logic_vector(15 DOWNTO 0);
-		B: in std_logic_vector(15 DOWNTO 0);
-		S: in std_logic;
-		Q: out std_logic_vector(15 DOWNTO 0)
+		i_A: in std_logic_vector(15 DOWNTO 0);
+		i_B: in std_logic_vector(15 DOWNTO 0);
+		i_S: in std_logic;
+		o_Q: out std_logic_vector(15 DOWNTO 0)
 
 );
 end MUX2X1;
 
 architecture Behavioral of MUX2X1 is
 BEGIN
-    PROCESS(S)
+    PROCESS(i_S)
     BEGIN
-    if (S = '1') then 
-		Q<=B;
+    if (i_S = '1') then 
+		o_Q<=i_B;
     else 
-		Q<=A;
+		o_Q<=i_A;
     end if;
     END PROCESS;
 end architecture;
