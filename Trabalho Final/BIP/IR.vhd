@@ -15,7 +15,7 @@ end IR;
 
 architecture Behavioral of IR is
 begin
-	process(i_CLK) is
+	process(i_CLK, i_RST) is
 		begin
 		if(i_RST = '1') then
 			o_IR <= (others=>'0');

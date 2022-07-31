@@ -6,35 +6,20 @@ ENTITY ula IS
 	(
 	  i_INPUT_A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
 	  i_INPUT_B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	  i_INPUT_IR: IN STD_LOGIC_VECTOR(15 DOWNTO 0);
-	  o_OUTPUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
-	  i_SEL : IN STD_LOGIC_VECTOR(2 DOWNTO 0)
+	  i_SEL_ULA: IN STD_LOGIC;
+	  o_OUTPUT : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
 	);
 END ula;
 
 ARCHITECTURE Behavioral OF ula IS
-
-  constant ADD : STD_LOGIC_VECTOR(3 DOWNTO 0):="0100";
-  constant ADDI  : STD_LOGIC_VECTOR(3 DOWNTO 0):="0101";
-  constant SUB   : STD_LOGIC_VECTOR(3 DOWNTO 0):="0110";
-  constant SUBI    : STD_LOGIC_VECTOR(3 DOWNTO 0):="0111";
-  signal w_OUTPUT: STD_LOGIC_VECTOR(15 DOWNTO 0);
   
 BEGIN
-	process (i_INPUT_A, i_INPUT_B)
+	process (i_INPUT_A, i_INPUT_B, i_SEL_ULA)
 	begin
-		case i_SEL is
-			when "100" =>
-				w_OUTPUT <= i_INPUT_A + i_INPUT_B; --add
-			when "101" =>
-				w_OUTPUT <= i_INPUT_A + i_INPUT_IR; --addi
-			when "110" =>
-				w_OUTPUT <= i_INPUT_A - i_INPUT_B; --sub
-			when "111" =>
-				w_OUTPUT <= i_INPUT_A - i_INPUT_IR; --subi	
-			when others => 
-				NULL;
-		end case;
+	if(i_SEL_ULA = '0') then
+				o_OUTPUT <= i_INPUT_A + i_INPUT_B; --add
+	else
+				o_OUTPUT <= i_INPUT_A - i_INPUT_B; --sub
+	end if;
 	end process;
-	o_OUTPUT <= w_OUTPUT;
 END Behavioral;

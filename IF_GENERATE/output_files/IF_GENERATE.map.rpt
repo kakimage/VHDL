@@ -1,5 +1,5 @@
 Analysis & Synthesis report for IF_GENERATE
-Fri May 27 11:36:32 2022
+Fri Jul 29 11:07:34 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -45,7 +45,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 27 11:36:32 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jul 29 11:07:34 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; IF_GENERATE                                 ;
 ; Top-level Entity Name              ; IF_GENERATE                                 ;
@@ -156,7 +156,7 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 4           ;
-; Maximum allowed            ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -166,14 +166,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                    ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
-; IF_GENERATE.vhd                  ; yes             ; User VHDL File  ; C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/IF_GENERATE.vhd ;         ;
-; PORTA_AND.vhd                    ; yes             ; User VHDL File  ; C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/PORTA_AND.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                           ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
+; IF_GENERATE.vhd                  ; yes             ; User VHDL File  ; D:/UFSC/2022.1/VHDL/IF_GENERATE/IF_GENERATE.vhd ;         ;
+; PORTA_AND.vhd                    ; yes             ; User VHDL File  ; D:/UFSC/2022.1/VHDL/IF_GENERATE/PORTA_AND.vhd   ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------+
@@ -275,7 +275,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -285,21 +285,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Fri May 27 11:36:11 2022
+    Info: Processing started: Fri Jul 29 11:06:52 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IF_GENERATE -c IF_GENERATE
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file if_generate.vhd
-    Info (12022): Found design unit 1: IF_GENERATE-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/IF_GENERATE.vhd Line: 21
-    Info (12023): Found entity 1: IF_GENERATE File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/IF_GENERATE.vhd Line: 7
+    Info (12022): Found design unit 1: IF_GENERATE-Behavioral File: D:/UFSC/2022.1/VHDL/IF_GENERATE/IF_GENERATE.vhd Line: 21
+    Info (12023): Found entity 1: IF_GENERATE File: D:/UFSC/2022.1/VHDL/IF_GENERATE/IF_GENERATE.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file porta_and.vhd
-    Info (12022): Found design unit 1: PORTA_AND-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/PORTA_AND.vhd Line: 20
-    Info (12023): Found entity 1: PORTA_AND File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/PORTA_AND.vhd Line: 7
+    Info (12022): Found design unit 1: PORTA_AND-Behavioral File: D:/UFSC/2022.1/VHDL/IF_GENERATE/PORTA_AND.vhd Line: 20
+    Info (12023): Found entity 1: PORTA_AND File: D:/UFSC/2022.1/VHDL/IF_GENERATE/PORTA_AND.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file porta_or.vhd
-    Info (12022): Found design unit 1: PORTA_OR-Behavioral File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/PORTA_OR.vhd Line: 20
-    Info (12023): Found entity 1: PORTA_OR File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/PORTA_OR.vhd Line: 7
+    Info (12022): Found design unit 1: PORTA_OR-Behavioral File: D:/UFSC/2022.1/VHDL/IF_GENERATE/PORTA_OR.vhd Line: 20
+    Info (12023): Found entity 1: PORTA_OR File: D:/UFSC/2022.1/VHDL/IF_GENERATE/PORTA_OR.vhd Line: 7
 Info (12127): Elaborating entity "IF_GENERATE" for the top level hierarchy
-Info (12128): Elaborating entity "PORTA_AND" for hierarchy "PORTA_AND:\U_AND:U01" File: C:/Users/64017451934/Documents/DEC7555/2022B/IF_GENERATE/IF_GENERATE.vhd Line: 54
+Info (12128): Elaborating entity "PORTA_AND" for hierarchy "PORTA_AND:\U_AND:U01" File: D:/UFSC/2022.1/VHDL/IF_GENERATE/IF_GENERATE.vhd Line: 54
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -308,9 +308,9 @@ Info (21057): Implemented 32 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 8 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Fri May 27 11:36:32 2022
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:45
+    Info: Peak virtual memory: 4815 megabytes
+    Info: Processing ended: Fri Jul 29 11:07:34 2022
+    Info: Elapsed time: 00:00:42
+    Info: Total CPU time (on all processors): 00:00:46
 
 

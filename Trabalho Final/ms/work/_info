@@ -1,0 +1,547 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.1
+Eacc
+Z0 w1659121344
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z2 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z3 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z4 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z5 dD:\UFSC\2022.1\VHDL\Trabalho Final\ms
+Z6 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd
+Z7 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd
+l0
+L6
+V7@Uz:BzaL`dclm:@ZVcl51
+Z8 OV;C;10.1d;51
+32
+Z9 !s108 1659144853.131000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd|
+Z11 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd|
+Z12 o-work work -2002 -explicit -O0
+Z13 tExplicit 1
+!s100 S8?SiFeICdQZjAFzj6:MG0
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 3 acc 0 22 7@Uz:BzaL`dclm:@ZVcl51
+l19
+L17
+VRLC9:;QkV2Y?6kT1o]geI3
+R8
+32
+R9
+R10
+R11
+R12
+R13
+!s100 ThU`M6;kH^aWoY:d;K0Jb0
+!i10b 1
+Ebip
+Z14 w1659143991
+R2
+R1
+R3
+R4
+R5
+Z15 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd
+Z16 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd
+l0
+L4
+V8B=]VO@kJKJ2jcoVYPe5n1
+R8
+32
+Z17 !s108 1659144858.408000
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd|
+Z19 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd|
+R12
+R13
+!s100 Il[GD>0B`kf[KBQ6GehG@0
+!i10b 1
+Abehavioral
+R2
+R1
+R3
+R4
+DEx4 work 3 bip 0 22 8B=]VO@kJKJ2jcoVYPe5n1
+l136
+L13
+V4Tm4UDT]^^;8CzegmOET]2
+R8
+32
+R17
+R18
+R19
+R12
+R13
+!s100 JCB7UXz0:6aQLYhUZP1fQ0
+!i10b 1
+Econtrol
+Z20 w1659102490
+Z21 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+R4
+R5
+Z22 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd
+Z23 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd
+l0
+L7
+VK?HeS>TH[B<<Q1Yg;nnof2
+R8
+32
+Z24 !s108 1659144853.952000
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd|
+Z26 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd|
+R12
+R13
+!s100 HBd@@QSbU@X]@5b0Y7OU[2
+!i10b 1
+Abehavioral
+R21
+R1
+R2
+R3
+R4
+DEx4 work 7 control 0 22 K?HeS>TH[B<<Q1Yg;nnof2
+l33
+L22
+VD[^L_QXBgSi0k9anKb`o=0
+R8
+32
+R24
+R25
+R26
+R12
+R13
+!s100 KLJY7IWJQI`?M]H17m@`13
+!i10b 1
+Eir
+Z27 w1659121302
+R1
+R2
+R3
+R4
+R5
+Z28 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd
+Z29 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd
+l0
+L6
+VRb^zE=1g87Iz`Zbo3lb`]1
+R8
+32
+Z30 !s108 1659144854.382000
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd|
+Z32 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd|
+R12
+R13
+!s100 Rhab0E7`5E:8gLCR1E@6[3
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 2 ir 0 22 Rb^zE=1g87Iz`Zbo3lb`]1
+l17
+L16
+VKHURG5Pg]_=k;3fNQZD4Z0
+R8
+32
+R30
+R31
+R32
+R12
+R13
+!s100 3n8i7CXb=h:MIL><T;K:I2
+!i10b 1
+Emux2x1
+R20
+R2
+R1
+R3
+R4
+R5
+Z33 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd
+Z34 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd
+l0
+L5
+V4@^M;eX3db0F;FCgKN0983
+R8
+32
+Z35 !s108 1659144855.355000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd|
+Z37 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd|
+R12
+R13
+!s100 XY05D03Sg3n>FNlPdeGK@3
+!i10b 1
+Abehavioral
+R2
+R1
+R3
+R4
+DEx4 work 6 mux2x1 0 22 4@^M;eX3db0F;FCgKN0983
+l16
+L15
+V<P9^VlOFW=9`gPa0SZ8Gm0
+R8
+32
+R35
+R36
+R37
+R12
+R13
+!s100 RSRO[VK7h35i=m5j1W]dD3
+!i10b 1
+Emux3x1
+R20
+R2
+R1
+R3
+R4
+R5
+Z38 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd
+Z39 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd
+l0
+L5
+VfA>ATi;JWK9WLhEI=2]Mj2
+R8
+32
+Z40 !s108 1659144855.789000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd|
+Z42 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd|
+R12
+R13
+!s100 c<DOaX=?71RMhEWYV>lHX1
+!i10b 1
+Abehavioral
+R2
+R1
+R3
+R4
+DEx4 work 6 mux3x1 0 22 fA>ATi;JWK9WLhEI=2]Mj2
+l17
+L16
+V@>nW9ZcAhRbi4aS4:mP;U2
+R8
+32
+R40
+R41
+R42
+R12
+R13
+!s100 kkTe5N=Mz?^83YH>BgKZ83
+!i10b 1
+Epc
+Z43 w1659023994
+R21
+R1
+R2
+R3
+R4
+R5
+Z44 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd
+Z45 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd
+l0
+L8
+Ve7QEUCRo8=PdD5hjo:QT03
+R8
+32
+Z46 !s108 1659144856.112000
+Z47 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd|
+Z48 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd|
+R12
+R13
+!s100 ^4G^@XeocH5Ym<JnOAmZj1
+!i10b 1
+Abehavioral
+R21
+R1
+R2
+R3
+R4
+DEx4 work 2 pc 0 22 e7QEUCRo8=PdD5hjo:QT03
+l22
+L18
+V?dFO4C>`fQ0i8?4FJgl0P3
+R8
+32
+R46
+R47
+R48
+R12
+R13
+!s100 _4OhKR@a9L:VkiGK>l=X@0
+!i10b 1
+Epll
+Z49 w1659024798
+R3
+R4
+R5
+Z50 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd
+Z51 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd
+l0
+L43
+VD7D;S@Am9T20ZJ?6aM2cZ3
+R8
+32
+Z52 !s108 1659144856.526000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd|
+Z54 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd|
+R12
+R13
+!s100 l5S9GIcZ;I[EzWB9`jdbH3
+!i10b 1
+Asyn
+R3
+R4
+DEx4 work 3 pll 0 22 D7D;S@Am9T20ZJ?6aM2cZ3
+l132
+L54
+V5zi=eTM`EFk3nUIB^M<E93
+R8
+32
+R52
+R53
+R54
+R12
+R13
+!s100 gzlIaa@^QA`Q4WeO8SBF71
+!i10b 1
+Eram
+Z55 w1658686447
+Z56 DPx9 altera_mf 20 altera_mf_components 0 22 zh;bE09gCIPDVLK?MN49L3
+R3
+R4
+R5
+Z57 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd
+Z58 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd
+l0
+L43
+V]D=QogiD;C8VLTD6b9V7g1
+R8
+32
+Z59 !s108 1659144857.256000
+Z60 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd|
+Z61 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd|
+R12
+R13
+!s100 i2N23_D<DRIkG?l8@cLm91
+!i10b 1
+Asyn
+R56
+R3
+R4
+DEx4 work 3 ram 0 22 ]D=QogiD;C8VLTD6b9V7g1
+l59
+L55
+VKUAAj:oV_[Y030`D4oFWX1
+R8
+32
+R59
+R60
+R61
+R12
+R13
+!s100 d^0HT`;AEN^H;@_E695?[0
+!i10b 1
+Erom
+R55
+R56
+R3
+R4
+R5
+Z62 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd
+Z63 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd
+l0
+L43
+VeGJKDNVan[nUh;VhFiM3V2
+R8
+32
+Z64 !s108 1659144857.943000
+Z65 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd|
+Z66 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd|
+R12
+R13
+!s100 VdVQDDBIZhE47Wed[Q4Xg3
+!i10b 1
+Asyn
+R56
+R3
+R4
+DEx4 work 3 rom 0 22 eGJKDNVan[nUh;VhFiM3V2
+l57
+L53
+VZKL6H_TBZleeojULXG3H12
+R8
+32
+R64
+R65
+R66
+R12
+R13
+!s100 oLbmHLO;;@XHA??l<OOQH0
+!i10b 1
+Esete_segmentos
+Z67 w1658880589
+R1
+R2
+R3
+R4
+R5
+Z68 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd
+Z69 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd
+l0
+L7
+Vd1ZWI`SgIG1TNj?0<j7;:2
+R8
+32
+Z70 !s108 1659143632.646000
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd|
+Z72 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/SETE_SEGMENTOS.vhd|
+R12
+R13
+!s100 gGnmdJl_?8B18nK`:Og=M1
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+R4
+DEx4 work 14 sete_segmentos 0 22 d1ZWI`SgIG1TNj?0<j7;:2
+l23
+L16
+Vl<o=<;aF9ebF5bh2THnEX3
+R8
+32
+R70
+R71
+R72
+R12
+R13
+!s100 KXl`2ESQPDoSa;fgT3nji3
+!i10b 1
+Etb_accumulator
+Z73 w1659023691
+R21
+R1
+R2
+R3
+R4
+R5
+Z74 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd
+Z75 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd
+l0
+L7
+V;0I=gnC`zcUO6jnCID:DE2
+R8
+32
+Z76 !s108 1659144853.536000
+Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd|
+Z78 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd|
+R12
+R13
+!s100 n6C2EnK>JinDOa@UzgeZ43
+!i10b 1
+Abehavior
+R21
+R1
+R2
+R3
+R4
+DEx4 work 14 tb_accumulator 0 22 ;0I=gnC`zcUO6jnCID:DE2
+l29
+L10
+VZ8fe;8NYecKDhZFCa8`Zf3
+R8
+32
+R76
+R77
+R78
+R12
+R13
+!s100 A7?aNj_4ZVUJI^ZbiEl9o3
+!i10b 1
+Etb_ula
+Z79 w1659144830
+R21
+R3
+R4
+R5
+Z80 8D:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd
+Z81 FD:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd
+l0
+L5
+V=MchI2oCg2[gCHCGHZS4e3
+!s100 Aa0S0gz?=X3i]UKb=z_]O2
+R8
+32
+!i10b 1
+Z82 !s108 1659144859.186000
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd|
+Z84 !s107 D:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd|
+R12
+R13
+Abehavior
+R21
+R3
+R4
+Z85 DEx4 work 6 tb_ula 0 22 =MchI2oCg2[gCHCGHZS4e3
+l26
+L8
+V>0LRkUzT1=K<KbaA7g_a`2
+!s100 BOKKzgGgX@:10IlHWk<h50
+R8
+32
+!i10b 1
+R82
+R83
+R84
+R12
+R13
+Eula
+Z86 w1659144078
+R2
+R1
+R3
+R4
+R5
+Z87 8D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd
+Z88 FD:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd
+l0
+L4
+V3SaRHBD?CF_oXEA`nOR613
+R8
+32
+Z89 !s108 1659144858.763000
+Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd|
+Z91 !s107 D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd|
+R12
+R13
+!s100 II=IN0;HfjI@B`Ee?^>d33
+!i10b 1
+Abehavioral
+R2
+R1
+R3
+R4
+DEx4 work 3 ula 0 22 3SaRHBD?CF_oXEA`nOR613
+l16
+L14
+VFaIJM[oO5>6OGUnU;8Ri]0
+!s100 4`6XSXD]KW^:hLk:5WUG`0
+R8
+32
+R89
+R90
+R91
+R12
+R13
+!i10b 1

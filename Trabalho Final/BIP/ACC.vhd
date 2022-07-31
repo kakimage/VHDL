@@ -18,15 +18,15 @@ architecture Behavioral of ACC is
 	signal w_ACC : STD_LOGIC_VECTOR (15 DOWNTO 0);
 begin
 
-	process (i_RST, i_CLK)
+	process (i_RST, i_CLK, i_WR_ACC)
 	begin
-		if i_RST = '1' then
+		if (i_RST = '1') then
 
 			o_ACC <= (others=>'0');
 			w_ACC <= (others=>'0');
 
 		elsif rising_edge(i_CLK) then
-			if i_WR_ACC = '1' then
+			if (i_WR_ACC = '1') then
 
 				w_ACC <= w_ACC + i_ACC;
 

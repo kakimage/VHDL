@@ -1,0 +1,129 @@
+{D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ula
+-- Compiling architecture Behavioral of ula
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity BIP
+-- Compiling architecture Behavioral of BIP
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity PC
+-- Compiling architecture Behavioral of PC
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity IR
+-- Compiling architecture Behavioral of IR
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity ROM
+-- Compiling architecture SYN of rom
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd} {1 {vcom -work work -2002 -explicit {D:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity TB_ULA
+-- Compiling architecture behavior of TB_ULA
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package altera_mf_components
+-- Compiling entity RAM
+-- Compiling architecture SYN of ram
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity PLL
+-- Compiling architecture SYN of pll
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_accumulator
+-- Compiling architecture behavior of tb_accumulator
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MUX2X1
+-- Compiling architecture Behavioral of MUX2X1
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MUX3X1
+-- Compiling architecture Behavioral of MUX3X1
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ACC
+-- Compiling architecture Behavioral of ACC
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity CONTROL
+-- Compiling architecture Behavioral of CONTROL
+
+} {} {}}

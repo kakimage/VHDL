@@ -1,16 +1,16 @@
-Analysis & Synthesis Status : Successful - Thu Jul 28 19:17:46 2022
+Analysis & Synthesis Status : Successful - Sat Jul 30 23:13:38 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : BIP
 Top-level Entity Name : BIP
 Family : MAX 10
-Total logic elements : 0
-    Total combinational functions : 0
-    Dedicated logic registers : 0
-Total registers : 0
-Total pins : 2
+Total logic elements : 105
+    Total combinational functions : 90
+    Dedicated logic registers : 37
+Total registers : 37
+Total pins : 22
 Total virtual pins : 0
-Total memory bits : 0
+Total memory bits : 57,344
 Embedded Multiplier 9-bit elements : 0
-Total PLLs : 0
+Total PLLs : 1
 UFM blocks : 0
 ADC blocks : 0

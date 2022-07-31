@@ -47,21 +47,53 @@ set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE BIP.vhd
-set_global_assignment -name QIP_FILE RAM.qip
-set_global_assignment -name QIP_FILE ROM.qip
-set_global_assignment -name VHDL_FILE MUX2X1.vhd
 set_global_assignment -name VHDL_FILE MUX3X1.vhd
 set_global_assignment -name VHDL_FILE ULA.vhd
-set_global_assignment -name VHDL_FILE SETE_SEGMENTOS.vhd
 set_global_assignment -name VHDL_FILE ULA_TB.vhd
 set_global_assignment -name VHDL_FILE CONTROL.vhd
 set_global_assignment -name VHDL_FILE PC.vhd
 set_global_assignment -name VHDL_FILE IR.vhd
 set_global_assignment -name VHDL_FILE ACC.vhd
 set_global_assignment -name VHDL_FILE ACC_TB.vhd
+set_global_assignment -name VHDL_FILE MUX2IN.vhd
+set_global_assignment -name VHDL_FILE MUX2OP2.vhd
+set_global_assignment -name HEX_FILE ROM.hex
+set_global_assignment -name QIP_FILE ROM.qip
+set_global_assignment -name QIP_FILE RAM.qip
+set_location_assignment PIN_N14 -to i_CLK
+set_location_assignment PIN_B8 -to i_RST
 set_global_assignment -name QIP_FILE PLL.qip
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_C10 -to i_SWITCHS[0]
+set_location_assignment PIN_C11 -to i_SWITCHS[1]
+set_location_assignment PIN_D12 -to i_SWITCHS[2]
+set_location_assignment PIN_C12 -to i_SWITCHS[3]
+set_location_assignment PIN_A12 -to i_SWITCHS[4]
+set_location_assignment PIN_B12 -to i_SWITCHS[5]
+set_location_assignment PIN_A13 -to i_SWITCHS[6]
+set_location_assignment PIN_A14 -to i_SWITCHS[7]
+set_location_assignment PIN_B14 -to i_SWITCHS[8]
+set_location_assignment PIN_F15 -to i_SWITCHS[9]
+set_location_assignment PIN_B11 -to o_LEDS[9]
+set_location_assignment PIN_A11 -to o_LEDS[8]
+set_location_assignment PIN_D14 -to o_LEDS[7]
+set_location_assignment PIN_E14 -to o_LEDS[6]
+set_location_assignment PIN_C13 -to o_LEDS[5]
+set_location_assignment PIN_D13 -to o_LEDS[4]
+set_location_assignment PIN_B10 -to o_LEDS[3]
+set_location_assignment PIN_A10 -to o_LEDS[2]
+set_location_assignment PIN_A9 -to o_LEDS[1]
+set_location_assignment PIN_A8 -to o_LEDS[0]
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name EXTERNAL_FLASH_FALLBACK_ADDRESS 00000000
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name INTERNAL_FLASH_UPDATE_MODE "SINGLE COMP IMAGE WITH ERAM"
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

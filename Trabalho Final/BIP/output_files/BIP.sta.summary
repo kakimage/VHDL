@@ -2,4 +2,88 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow 1200mV 85C Model Setup 'IR:uIR|o_OPCODE[0]'
+Slack : -10.814
+TNS   : -100.862
+
+Type  : Slow 1200mV 85C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -5.413
+TNS   : -51.720
+
+Type  : Slow 1200mV 85C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.350
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'IR:uIR|o_OPCODE[0]'
+Slack : 4.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
+Slack : 0.427
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.676
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_CLK'
+Slack : 4.895
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'IR:uIR|o_OPCODE[0]'
+Slack : -9.966
+TNS   : -92.755
+
+Type  : Slow 1200mV 0C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -4.524
+TNS   : -43.314
+
+Type  : Slow 1200mV 0C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.307
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'IR:uIR|o_OPCODE[0]'
+Slack : 3.894
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
+Slack : 0.382
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.688
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_CLK'
+Slack : 4.920
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'IR:uIR|o_OPCODE[0]'
+Slack : -4.465
+TNS   : -41.238
+
+Type  : Fast 1200mV 0C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -1.932
+TNS   : -18.509
+
+Type  : Fast 1200mV 0C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.170
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'IR:uIR|o_OPCODE[0]'
+Slack : 1.529
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLK'
+Slack : 4.668
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'U01|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 4.715
+TNS   : 0.000
+
 ------------------------------------------------------------
