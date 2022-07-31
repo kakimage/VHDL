@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sat Jul 30 23:13:58 2022
+Fitter Status : Successful - Sun Jul 31 00:25:29 2022
 Quartus Prime Version : 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 Revision Name : BIP
 Top-level Entity Name : BIP
 Family : MAX 10
 Device : 10M50DAF484C7G
 Timing Models : Final
-Total logic elements : 92 / 49,760 ( < 1 % )
-    Total combinational functions : 92 / 49,760 ( < 1 % )
+Total logic elements : 91 / 49,760 ( < 1 % )
+    Total combinational functions : 91 / 49,760 ( < 1 % )
     Dedicated logic registers : 37 / 49,760 ( < 1 % )
 Total registers : 37
 Total pins : 22 / 360 ( 6 % )

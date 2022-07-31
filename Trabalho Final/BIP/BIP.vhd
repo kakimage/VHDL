@@ -227,7 +227,7 @@ begin
 	uMUX2OP2: MUX2OP2
 		PORT MAP(
 			i_A			=> w_ACC,
-			i_B			=> w_MUX3,
+			i_B			=> "0000" & w_QIN,
 			i_S			=> w_SEL_OP2,
 			o_Q			=> w_MUX2OP2
 				);

@@ -3,23 +3,23 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'IR:uIR|o_OPCODE[0]'
-Slack : -10.814
-TNS   : -100.862
+Slack : -7.168
+TNS   : -69.032
 
 Type  : Slow 1200mV 85C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -5.413
-TNS   : -51.720
+Slack : -5.075
+TNS   : -46.763
 
 Type  : Slow 1200mV 85C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.350
+Slack : 0.333
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'IR:uIR|o_OPCODE[0]'
-Slack : 4.013
+Slack : 2.187
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
-Slack : 0.427
+Slack : 0.465
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'U01|altpll_component|auto_generated|pll1|clk[0]'
@@ -31,23 +31,23 @@ Slack : 4.895
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'IR:uIR|o_OPCODE[0]'
-Slack : -9.966
-TNS   : -92.755
+Slack : -6.812
+TNS   : -65.299
 
 Type  : Slow 1200mV 0C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -4.524
-TNS   : -43.314
+Slack : -4.228
+TNS   : -38.788
 
 Type  : Slow 1200mV 0C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.307
+Slack : 0.291
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'IR:uIR|o_OPCODE[0]'
-Slack : 3.894
+Slack : 1.978
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
-Slack : 0.382
+Slack : 0.410
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'U01|altpll_component|auto_generated|pll1|clk[0]'
@@ -59,23 +59,23 @@ Slack : 4.920
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'IR:uIR|o_OPCODE[0]'
-Slack : -4.465
-TNS   : -41.238
+Slack : -2.833
+TNS   : -27.046
 
 Type  : Fast 1200mV 0C Model Setup 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : -1.932
-TNS   : -18.509
+Slack : -1.829
+TNS   : -16.602
 
 Type  : Fast 1200mV 0C Model Hold 'U01|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.170
+Slack : 0.162
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'IR:uIR|o_OPCODE[0]'
-Slack : 1.529
+Slack : 0.709
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'IR:uIR|o_OPCODE[0]'
-Slack : 0.425
+Slack : 0.378
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLK'

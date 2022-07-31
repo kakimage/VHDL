@@ -21,7 +21,7 @@ BEGIN
 				when "00" => o_Q <= i_A;
 				when "01" => o_Q <= i_B;
 				when "10" => o_Q <= i_C;
-				when others => report "unreachable" severity failure;
+				when others => NULL;
 	end case;
 	END PROCESS;
 end architecture;
