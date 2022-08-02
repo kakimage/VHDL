@@ -8,7 +8,7 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity ula
 -- Compiling architecture Behavioral of ula
 
-} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd}
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd} {0 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -17,6 +17,32 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity BIP
 -- Compiling architecture Behavioral of BIP
+** Error: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd(168): (vcom-1436) Actual expression (prefix expression) of formal "areset" is not globally static.
+
+** Error: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd(206): (vcom-1436) Actual expression (infix expression) of formal "i_B" is not globally static.
+
+** Error: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd(213): (vcom-1436) Actual expression (infix expression) of formal "i_B" is not globally static.
+
+** Error: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd(258): VHDL Compiler exiting
+
+} {10.0 11.0 12.0 13.0 14.0 15.0 16.0 17.0} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1_TB.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1_TB.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MUX3X1_TB
+-- Compiling architecture Behavioral of MUX3X1_TB
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2IN.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2IN.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MUX2IN
+-- Compiling architecture Behavioral of MUX2IN
 
 } {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PC.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -39,6 +65,16 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity IR
 -- Compiling architecture Behavioral of IR
 
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2OP2.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2OP2.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity MUX2OP2
+-- Compiling architecture Behavioral of MUX2OP2
+
 } {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ROM.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -48,14 +84,14 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity ROM
 -- Compiling architecture SYN of rom
 
-} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd} {1 {vcom -work work -2002 -explicit {D:\UFSC\2022.1\VHDL\Trabalho Final\BIP\ULA_TB.vhd}
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package NUMERIC_STD
--- Compiling entity TB_ULA
--- Compiling architecture behavior of TB_ULA
+-- Compiling entity ULA_TB
+-- Compiling architecture Behavioral of ULA_TB
 
 } {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/RAM.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -81,19 +117,8 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_1164
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity tb_accumulator
--- Compiling architecture behavior of tb_accumulator
-
-} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2X1.vhd}
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Compiling entity MUX2X1
--- Compiling architecture Behavioral of MUX2X1
+-- Compiling entity ACC_TB
+-- Compiling architecture Behavioral of ACC_TB
 
 } {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -114,6 +139,16 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STD_LOGIC_UNSIGNED
 -- Compiling entity ACC
 -- Compiling architecture Behavioral of ACC
+
+} {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR_TB.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR_TB.vhd}
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity IR_TB
+-- Compiling architecture Behavioral of IR_TB
 
 } {} {}} {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd} {1 {vcom -work work -2002 -explicit {D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012

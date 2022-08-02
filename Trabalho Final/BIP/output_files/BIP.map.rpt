@@ -1,5 +1,5 @@
 Analysis & Synthesis report for BIP
-Sun Jul 31 00:25:08 2022
+Tue Aug  2 14:09:54 2022
 Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
 
 
@@ -27,13 +27,12 @@ Quartus Prime Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
  19. altpll Parameter Settings by Entity Instance
  20. altsyncram Parameter Settings by Entity Instance
  21. Port Connectivity Checks: "RAM:U03"
- 22. Port Connectivity Checks: "MUX2OP2:uMUX2OP2"
- 23. Port Connectivity Checks: "MUX3X1:uMUX3X1"
- 24. Port Connectivity Checks: "MUX2IN:uMUX2IN"
- 25. Port Connectivity Checks: "CONTROL:uCONTROL"
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 22. Port Connectivity Checks: "MUX3X1:uMUX3X1"
+ 23. Port Connectivity Checks: "MUX2IN:uMUX2IN"
+ 24. Port Connectivity Checks: "CONTROL:uCONTROL"
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -60,13 +59,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jul 31 00:25:08 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Aug  2 14:09:54 2022       ;
 ; Quartus Prime Version              ; 21.1.0 Build 842 10/21/2021 SJ Lite Edition ;
 ; Revision Name                      ; BIP                                         ;
 ; Top-level Entity Name              ; BIP                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 104                                         ;
-;     Total combinational functions  ; 89                                          ;
+; Total logic elements               ; 105                                         ;
+;     Total combinational functions  ; 90                                          ;
 ;     Dedicated logic registers      ; 37                                          ;
 ; Total registers                    ; 37                                          ;
 ; Total pins                         ; 22                                          ;
@@ -224,16 +223,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                      ;
 +---------------------------------------------+----------------------------------------------------------------------------+
-; Estimated Total logic elements              ; 104                                                                        ;
+; Estimated Total logic elements              ; 105                                                                        ;
 ;                                             ;                                                                            ;
-; Total combinational functions               ; 89                                                                         ;
+; Total combinational functions               ; 90                                                                         ;
 ; Logic element usage by number of LUT inputs ;                                                                            ;
-;     -- 4 input functions                    ; 22                                                                         ;
+;     -- 4 input functions                    ; 23                                                                         ;
 ;     -- 3 input functions                    ; 52                                                                         ;
 ;     -- <=2 input functions                  ; 15                                                                         ;
 ;                                             ;                                                                            ;
 ; Logic elements by mode                      ;                                                                            ;
-;     -- normal mode                          ; 60                                                                         ;
+;     -- normal mode                          ; 61                                                                         ;
 ;     -- arithmetic mode                      ; 29                                                                         ;
 ;                                             ;                                                                            ;
 ; Total registers                             ; 37                                                                         ;
@@ -250,8 +249,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                            ;
 ; Maximum fan-out node                        ; PLL:U01|altpll:altpll_component|PLL_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 53                                                                         ;
-; Total fan-out                               ; 609                                                                        ;
-; Average fan-out                             ; 3.29                                                                       ;
+; Total fan-out                               ; 613                                                                        ;
+; Average fan-out                             ; 3.30                                                                       ;
 +---------------------------------------------+----------------------------------------------------------------------------+
 
 
@@ -260,12 +259,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------+-----------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                         ; Entity Name     ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-----------------------------------------------------------------------------+-----------------+--------------+
-; |BIP                                      ; 89 (0)              ; 37 (0)                    ; 57344       ; 0          ; 0            ; 0       ; 0         ; 22   ; 0            ; 0          ; |BIP                                                                        ; BIP             ; work         ;
+; |BIP                                      ; 90 (0)              ; 37 (0)                    ; 57344       ; 0          ; 0            ; 0       ; 0         ; 22   ; 0            ; 0          ; |BIP                                                                        ; BIP             ; work         ;
 ;    |ACC:uACC|                             ; 10 (10)             ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|ACC:uACC                                                               ; ACC             ; work         ;
-;    |CONTROL:uCONTROL|                     ; 3 (3)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|CONTROL:uCONTROL                                                       ; CONTROL         ; work         ;
+;    |CONTROL:uCONTROL|                     ; 4 (4)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|CONTROL:uCONTROL                                                       ; CONTROL         ; work         ;
 ;    |IR:uIR|                               ; 0 (0)               ; 14 (14)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|IR:uIR                                                                 ; IR              ; work         ;
-;    |MUX2OP2:uMUX2OP2|                     ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|MUX2OP2:uMUX2OP2                                                       ; MUX2OP2         ; work         ;
-;    |MUX3X1:uMUX3X1|                       ; 11 (11)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|MUX3X1:uMUX3X1                                                         ; MUX3X1          ; work         ;
+;    |MUX2OP2:uMUX2OP2|                     ; 10 (10)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|MUX2OP2:uMUX2OP2                                                       ; MUX2OP2         ; work         ;
+;    |MUX3X1:uMUX3X1|                       ; 12 (12)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|MUX3X1:uMUX3X1                                                         ; MUX3X1          ; work         ;
 ;    |PC:uPC|                               ; 12 (12)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|PC:uPC                                                                 ; PC              ; work         ;
 ;    |PLL:U01|                              ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|PLL:U01                                                                ; PLL             ; work         ;
 ;       |altpll:altpll_component|           ; 1 (0)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |BIP|PLL:U01|altpll:altpll_component                                        ; altpll          ; work         ;
@@ -350,7 +349,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |BIP|MUX3X1:uMUX3X1|Mux15  ;
-; 3:1                ; 12 bits   ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |BIP|MUX3X1:uMUX3X1|Mux11  ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |BIP|MUX3X1:uMUX3X1|Mux11  ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |BIP|MUX3X1:uMUX3X1|Mux9   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -927,15 +927,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------+
-; Port Connectivity Checks: "MUX2OP2:uMUX2OP2"  ;
-+-------------+-------+----------+--------------+
-; Port        ; Type  ; Severity ; Details      ;
-+-------------+-------+----------+--------------+
-; i_b[15..12] ; Input ; Info     ; Stuck at GND ;
-+-------------+-------+----------+--------------+
-
-
-+-----------------------------------------------+
 ; Port Connectivity Checks: "MUX3X1:uMUX3X1"    ;
 +-------------+-------+----------+--------------+
 ; Port        ; Type  ; Severity ; Details      ;
@@ -973,20 +964,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 23                          ;
 ;     ENA               ; 4                           ;
 ;     ENA CLR           ; 10                          ;
-; cycloneiii_lcell_comb ; 89                          ;
+; cycloneiii_lcell_comb ; 90                          ;
 ;     arith             ; 29                          ;
 ;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 20                          ;
-;     normal            ; 60                          ;
+;     normal            ; 61                          ;
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 4                           ;
 ;         3 data inputs ; 32                          ;
-;         4 data inputs ; 22                          ;
+;         4 data inputs ; 23                          ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 14                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.90                        ;
-; Average LUT depth     ; 3.19                        ;
+; Average LUT depth     ; 3.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1005,7 +996,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 21.1.0 Build 842 10/21/2021 SJ Lite Edition
-    Info: Processing started: Sun Jul 31 00:24:47 2022
+    Info: Processing started: Tue Aug  2 14:09:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off BIP -c BIP
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1019,7 +1010,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file ula.vhd
     Info (12022): Found design unit 1: ula-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd Line: 14
     Info (12023): Found entity 1: ula File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file ula_tb.vhd
-    Info (12022): Found design unit 1: ULA_TB-behavior File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 8
+    Info (12022): Found design unit 1: ULA_TB-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 8
     Info (12023): Found entity 1: ULA_TB File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ULA_TB.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file control.vhd
     Info (12022): Found design unit 1: CONTROL-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 22
@@ -1034,8 +1025,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file acc.vhd
     Info (12022): Found design unit 1: ACC-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd Line: 17
     Info (12023): Found entity 1: ACC File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file acc_tb.vhd
-    Info (12022): Found design unit 1: tb_accumulator-behavior File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 10
-    Info (12023): Found entity 1: tb_accumulator File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 7
+    Info (12022): Found design unit 1: ACC_TB-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 9
+    Info (12023): Found entity 1: ACC_TB File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/ACC_TB.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file mux2in.vhd
     Info (12022): Found design unit 1: MUX2IN-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2IN.vhd Line: 15
     Info (12023): Found entity 1: MUX2IN File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX2IN.vhd Line: 5
@@ -1051,6 +1042,14 @@ Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
 Info (12021): Found 2 design units, including 1 entities, in source file pll.vhd
     Info (12022): Found design unit 1: pll-SYN File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd Line: 54
     Info (12023): Found entity 1: PLL File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/PLL.vhd Line: 43
+Info (12021): Found 1 design units, including 1 entities, in source file bip_tb.vhd
+    Info (12023): Found entity 1: BIP_TB File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP_TB.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file mux3x1_tb.vhd
+    Info (12022): Found design unit 1: MUX3X1_TB-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1_TB.vhd Line: 8
+    Info (12023): Found entity 1: MUX3X1_TB File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1_TB.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file ir_tb.vhd
+    Info (12022): Found design unit 1: IR_TB-Behavioral File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR_TB.vhd Line: 9
+    Info (12023): Found entity 1: IR_TB File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/IR_TB.vhd Line: 6
 Info (12127): Elaborating entity "BIP" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at BIP.vhd(143): object "w_EN_RAM" assigned a value but never read File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 143
 Warning (10036): Verilog HDL or VHDL warning at BIP.vhd(145): object "w_EN_ROM" assigned a value but never read File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 145
@@ -1283,8 +1282,8 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "RAM:U03|altsyncram:altsyncram_component|altsyncram_6ep3:auto_generated|q_a[15]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/db/altsyncram_6ep3.tdf Line: 367
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ROM:U02|altsyncram:altsyncram_component|altsyncram_53r3:auto_generated|q_a[10]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/db/altsyncram_53r3.tdf Line: 255
         Warning (14320): Synthesized away node "ROM:U02|altsyncram:altsyncram_component|altsyncram_53r3:auto_generated|q_a[11]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/db/altsyncram_53r3.tdf Line: 277
+        Warning (14320): Synthesized away node "ROM:U02|altsyncram:altsyncram_component|altsyncram_53r3:auto_generated|q_a[10]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/db/altsyncram_53r3.tdf Line: 255
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13012): Latch MUX3X1:uMUX3X1|o_Q[0] has unsafe behavior File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/MUX3X1.vhd Line: 18
     Warning (13013): Ports D and ENA on the latch are fed by the same signal CONTROL:uCONTROL|o_SEL_OP1[1] File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/CONTROL.vhd Line: 15
@@ -1311,26 +1310,26 @@ Info (17049): 8 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_SWITCHS[0]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[1]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[2]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[3]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[4]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[5]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[6]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[7]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-    Warning (15610): No output dependent on input pin "i_SWITCHS[8]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
     Warning (15610): No output dependent on input pin "i_SWITCHS[9]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
-Info (21057): Implemented 141 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "i_SWITCHS[8]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[7]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[6]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[5]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[4]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[3]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[2]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[1]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_SWITCHS[0]" File: D:/UFSC/2022.1/VHDL/Trabalho Final/BIP/BIP.vhd Line: 9
+Info (21057): Implemented 142 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 10 output pins
-    Info (21061): Implemented 104 logic cells
+    Info (21061): Implemented 105 logic cells
     Info (21064): Implemented 14 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 66 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Sun Jul 31 00:25:08 2022
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Peak virtual memory: 4818 megabytes
+    Info: Processing ended: Tue Aug  2 14:09:54 2022
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:37
 
 

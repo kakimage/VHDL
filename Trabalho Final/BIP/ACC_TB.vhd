@@ -2,60 +2,67 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
-use iEEE.NUMERIC_STD.ALL;
  
-ENTITY tb_accumulator IS
-END tb_accumulator;
+ENTITY ACC_TB IS
+END ACC_TB;
  
-ARCHITECTURE behavior OF tb_accumulator IS
+ARCHITECTURE Behavioral OF ACC_TB IS
  
- COMPONENT accumulator
+ COMPONENT ACC
  PORT(
-	 clk : IN std_logic;
-	 reset : IN std_logic;
-	 Din : IN std_logic_vector(3 downto 0);
-	 Q : OUT std_logic_vector(3 downto 0)
+		i_CLK : IN STD_LOGIC; 			
+		i_RST : IN STD_LOGIC;
+		i_WR_ACC : IN STD_LOGIC;
+		i_ACC : IN STD_LOGIC_VECTOR (15 DOWNTO 0);
+		o_ACC : OUT STD_LOGIC_VECTOR (15 DOWNTO 0)
  );
  END COMPONENT;
  
- signal clk : std_logic := '0';
- signal reset : std_logic := '0';
- signal Din : std_logic_vector(3 downto 0) := (others => '0');
+ SIGNAL w_CLK : STD_LOGIC := '0';
+ SIGNAL w_RST : STD_LOGIC := '0';
+ SIGNAL w_WR_ACC: STD_LOGIC;
+ SIGNAL wi_ACC : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
  
- signal Q : std_logic_vector(3 downto 0);
+ SIGNAL wo_ACC : std_logic_vector(15 downto 0);
  
- constant clk_period : time := 20 ns;
  
 BEGIN
  
- uut: accumulator PORT MAP (
-	 clk => clk,
-	 reset => reset,
-	 Din => Din,
-	 Q => Q
- );
- 
- clk_process : process
- begin
-	 clk <= '0';
-	 wait for clk_period/2;
-	 clk <= '1';
-	 wait for clk_period/2;
-end process;
+	UUT: ACC 
+		PORT MAP (
+		 i_CLK => w_CLK,
+		 i_RST => w_RST,
+		 i_WR_ACC => w_WR_ACC,
+		 i_ACC => wi_ACC,
+		 o_ACC => wo_ACC
+		);
+
+	--PROCESSO DE RELOGIO
+	PROCESS
+	BEGIN
+		 w_CLK <= '0';
+		 WAIT FOR 20 ns;
+		 w_CLK <= '1';
+		 WAIT FOR 20 ns;
+	END PROCESS;
 	 
- stim_proc: process
- begin
-	wait for 100 ns;
+	--CIRCUITO DE RESET 
+	PROCESS
+	BEGIN
+		w_RST <= '1';
+		WAIT FOR 100 ns;
+		w_RST <= '0';
+		WAIT;
 
-	reset <= '1';
-
-	Din <= "0010";
-
-	wait for 100 ns;
-
-	reset <= '0';
-	wait;
-
- end process;
+	END PROCESS;
+	
+	--TESTE ACC
+	PROCESS
+	BEGIN
+		wi_ACC <= "0000000000000001";
+		WAIT FOR 150 ns;
+		w_WR_ACC <= '1';
+		WAIT;
+	END PROCESS;
  
-END;
+END Behavioral;

@@ -194,7 +194,7 @@ begin
 				);
 	uIR: IR
 	PORT MAP(
-			i_IR 			=> W_DATA_ROM,
+			i_IR 			=> w_DATA_ROM,
 			i_RST 		=> w_RST,
 			i_CLK 		=> w_CLK,
 			o_IR			=> w_IR,
@@ -202,7 +202,7 @@ begin
 				);
 	uMUX2IN: MUX2IN
 		PORT MAP(
-			i_A			=> W_IR,
+			i_A			=> w_IR,
 			i_B			=> "00" & i_SWITCHS,
 			i_S			=> w_EN_IN,
 			o_Q			=> w_QIN
@@ -227,7 +227,7 @@ begin
 	uMUX2OP2: MUX2OP2
 		PORT MAP(
 			i_A			=> w_ACC,
-			i_B			=> "0000" & w_QIN,
+			i_B			=> w_MUX3,
 			i_S			=> w_SEL_OP2,
 			o_Q			=> w_MUX2OP2
 				);

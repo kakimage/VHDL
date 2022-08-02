@@ -5,7 +5,7 @@ USE ieee.numeric_std.ALL;
 ENTITY ULA_TB IS
 END ULA_TB;
   
-ARCHITECTURE behavior OF ULA_TB IS
+ARCHITECTURE Behavioral OF ULA_TB IS
   
 	COMPONENT ULA is
 	PORT(
