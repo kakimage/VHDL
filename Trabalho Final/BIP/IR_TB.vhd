@@ -1,0 +1,68 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity IR_TB IS
+END IR_TB;
+
+ARCHITECTURE Behavioral OF IR_TB IS
+ 
+ COMPONENT IR
+ PORT(
+		i_IR :IN STD_LOGIC_VECTOR(15 DOWNTO 0) ;
+		i_RST: IN STD_LOGIC;
+		i_CLK: IN STD_LOGIC;
+		o_IR: OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+		o_OPCODE: OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
+ );
+ END COMPONENT;
+ 
+ SIGNAL w_CLK : STD_LOGIC := '0';
+ SIGNAL w_RST : STD_LOGIC := '0';
+ SIGNAL wi_IR : STD_LOGIC_VECTOR(15 downto 0) := (others => '0');
+ 
+ SIGNAL wo_IR : std_logic_vector(11 downto 0);
+ SIGNAL w_OPCODE : std_logic_vector(3 downto 0);
+ 
+ 
+BEGIN
+ 
+	UUT: IR 
+		PORT MAP (
+		 i_CLK => w_CLK,
+		 i_RST => w_RST,
+		 i_IR => wi_IR,
+		 o_IR => wo_IR,
+		 o_OPCODE => w_OPCODE
+		);
+
+	--PROCESSO DE RELOGIO
+	PROCESS
+	BEGIN
+		 w_CLK <= '0';
+		 WAIT FOR 20 ns;
+		 w_CLK <= '1';
+		 WAIT FOR 20 ns;
+	END PROCESS;
+	 
+	--CIRCUITO DE RESET 
+	PROCESS
+	BEGIN
+		w_RST <= '1';
+		WAIT FOR 100 ns;
+		w_RST <= '0';
+		WAIT;
+
+	END PROCESS;
+	
+	--TESTE IR
+	PROCESS
+	BEGIN
+		wi_IR <= "0111000000001101";
+		WAIT FOR 150 ns;
+		wi_IR <= "0001000001111111";
+		WAIT;
+	END PROCESS;
+ 
+END Behavioral;
